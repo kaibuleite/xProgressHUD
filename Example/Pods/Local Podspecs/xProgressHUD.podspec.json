@@ -1,0 +1,32 @@
+{
+  "name": "xProgressHUD",
+  "version": "1.0.0",
+  "summary": "A short description of xProgressHUD.",
+  "swift_versions": "5",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/kaibuleite/xProgressHUD",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "kaibuleite": "177955297@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/kaibuleite/xProgressHUD.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "xProgressHUD/Classes/**/*",
+  "dependencies": {
+    "xDefine": [
+
+    ],
+    "xExtension": [
+
+    ]
+  },
+  "swift_version": "5"
+}
