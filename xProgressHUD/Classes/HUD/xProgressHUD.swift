@@ -128,6 +128,7 @@ public class xProgressHUD: UIView {
         shared.msgLbl.isHidden = (msg.count == 0)
         shared.updateHUDStyle()
         shared.startAnimation()
+        shared.frame = window.bounds
         window.addSubview(shared)
         // 展示UI
         UIView.animate(withDuration: 0.25, animations: {
