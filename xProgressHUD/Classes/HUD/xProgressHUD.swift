@@ -26,6 +26,8 @@ public class xProgressHUD: UIView {
     public var config = xHUDConfig()
     /// 显示次数
     public var displayCount = 0
+    /// 最大显示时长(默认60s)
+    public var maxDisplayDuration = TimeInterval(60)
     
     // MARK: - Private Property
     /// 承载动画的layer
@@ -73,6 +75,11 @@ public class xProgressHUD: UIView {
         let idx = arc4random() % 4
         config.animeType = arr[Int(idx)]
     }
+    /// 设置最大显示时长
+    public static func setMaxDisplayDuration(_ duration : TimeInterval)
+    {
+        shared.maxDisplayDuration = duration
+    }
     /// 设置背景颜色
     public static func setBackgroundColor(_ color : UIColor)
     {
@@ -116,7 +123,7 @@ public class xProgressHUD: UIView {
     ///   - style: 遮罩样式
     ///   - msg: 提示内容
     public static func display(msg : String = "",
-                               delay : TimeInterval)
+                               delay : TimeInterval = 0)
     {
         guard !shared.isDisplaying else { return }    // 保证只显示1个遮罩
         guard let window = xKeyWindow else { return }
@@ -135,7 +142,11 @@ public class xProgressHUD: UIView {
             shared.alpha = 1
         })
         // 延迟隐藏
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delay, execute: {
+        var duration = delay
+        if delay == 0 {
+            duration = self.shared.maxDisplayDuration
+        }
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + duration, execute: {
             // shared.displayCount = 1
             self.dismiss()
         })
