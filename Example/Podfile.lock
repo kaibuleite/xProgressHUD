@@ -1,8 +1,8 @@
 PODS:
   - xDefine (1.0.4)
-  - xExtension (1.1.1):
+  - xExtension (1.1.2):
     - xDefine
-  - xProgressHUD (1.0.0):
+  - xProgressHUD (1.0.2):
     - xDefine
     - xExtension
 
@@ -20,8 +20,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   xDefine: ca6c6eef825544db8b43409e66dbff05eca7ac58
-  xExtension: 70d1f6b92b268f1e36236f8be26ed86c72628a0b
-  xProgressHUD: d122ef5bc8b52bbda49f0400e5632a93c5184330
+  xExtension: c0850b5b3c3103c3e57a5be8acdd402daaf02c16
+  xProgressHUD: ba347b238073e4972ad6a8944480ed251d81c808
 
 PODFILE CHECKSUM: 0b58b3d3bb9baa0fe7e5c4a73e6dab78255ee58d
 
