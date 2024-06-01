@@ -1,8 +1,8 @@
 PODS:
-  - xDefine (1.0.4)
-  - xExtension (1.1.2):
+  - xDefine (1.0.7)
+  - xExtension (1.1.8):
     - xDefine
-  - xProgressHUD (1.0.2):
+  - xProgressHUD (1.0.4):
     - xDefine
     - xExtension
 
@@ -19,10 +19,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  xDefine: ca6c6eef825544db8b43409e66dbff05eca7ac58
-  xExtension: c0850b5b3c3103c3e57a5be8acdd402daaf02c16
-  xProgressHUD: ba347b238073e4972ad6a8944480ed251d81c808
+  xDefine: e9216a8c29a4a5abce78630e311449182c79a7f3
+  xExtension: 410b32f4a0377e4962082c7d1315b4b77454f7aa
+  xProgressHUD: e94bbd83de78b3ffeef062048f4f14ad94b502ba
 
-PODFILE CHECKSUM: 0b58b3d3bb9baa0fe7e5c4a73e6dab78255ee58d
+PODFILE CHECKSUM: b8b8d7a548e3a8a1b216dadbeaafdbc6d037ea8a
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.15.2

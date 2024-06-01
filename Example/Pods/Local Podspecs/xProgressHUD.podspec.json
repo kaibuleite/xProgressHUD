@@ -1,6 +1,6 @@
 {
   "name": "xProgressHUD",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "summary": "A short description of xProgressHUD.",
   "swift_versions": "5",
   "description": "TODO: Add long description of the pod here.",
@@ -14,10 +14,10 @@
   },
   "source": {
     "git": "https://github.com/kaibuleite/xProgressHUD.git",
-    "tag": "1.0.2"
+    "tag": "1.0.4"
   },
   "platforms": {
-    "ios": "9.0"
+    "ios": "13.0"
   },
   "source_files": "xProgressHUD/Classes/**/*",
   "dependencies": {
